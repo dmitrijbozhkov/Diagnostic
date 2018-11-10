@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.nure.Diagnosis.Services.Implementations.PersonServiceTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.93 s - in org.nure.Diagnosis.Services.Implementations.PersonServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.281 s - in org.nure.Diagnosis.Services.Implementations.PersonServiceTest

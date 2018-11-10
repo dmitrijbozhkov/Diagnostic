@@ -1,1 +1,2 @@
-org/nure/Diagnosis/Services/Implementations/PersonServiceTest.class
+org/nure/diagnosis/controllers/UserControllerTest.class
+org/nure/diagnosis/services/implementations/PersonServiceTest.class
