@@ -1,0 +1,36 @@
+<div class="navbar-brand">
+  {{#link-to "index" class="navbar-item is-size-3"}}
+    Crane
+  {{/link-to}}
+  <a
+    class="navbar-burger burger {{if isBurgerOpen "is-active"}}"
+    role="button"
+    aria-label="menu"
+    aria-expanded="false"
+    {{action "toggleBurger" on="click"}}
+  >
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+</div>
+<div class="navbar-menu {{if isBurgerOpen "is-active"}}" id="navbar-buttons">
+  <div class="navbar-end">
+    {{#link-to "fuel-catalogue" class="navbar-item"}}
+      Fuel catalogue
+    {{/link-to}}
+    {{#link-to "about" class="navbar-item"}}
+      About
+    {{/link-to}}
+    <div class="navbar-item">
+      <div class="buttons">
+        {{#link-to "register" class="button is-primary"}}
+          Register
+        {{/link-to}}
+        {{#link-to "login" class="button is-light"}}
+          Login
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+</div>

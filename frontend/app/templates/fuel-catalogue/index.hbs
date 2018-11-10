@@ -1,0 +1,55 @@
+<section class="container">
+  <div class="columns is-multiline">
+    <div class="column is-full">
+      <h1 class="title">Buy fuel</h1>
+    </div>
+    {{#each model as |fuel|}}
+      <div class="box column is-full has-background-white-ter">
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <div class="tile is-parent is-vertical is-10">
+              <div class="tile is-child">
+                <div class="level">
+                  <div class="level-left">
+                    <h1 class="title">{{fuel.fuelName}}</h1>
+                  </div>
+                  <div class="level-right">
+                    <h2 class="subtitle">{{fuel.fuelLeft}}/{{fuel.maxFuel}} Liters</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="tile is-child">
+                <progress
+                  class="progress is-info"
+                  value={{fuel.fuelLeft}}
+                  max="10000"
+                >
+                </progress>
+              </div>
+              <div class="tile is-child is-size-4">
+                <p>{{fuel.description}}</p>
+              </div>
+            </div>
+            <div 
+              class="tile is-parent is-2 is-vertical has-background-danger has-text-white-bis"
+            >
+              <div class="tile is-child">
+                {{#link-to
+                  "fuel-catalogue.buy"
+                  fuel.fuelName
+                  class=(if fuel.fuelLeft "button is-success is-fullwidth is-large" "button is-success is-static is-fullwidth is-large")  
+                }}
+                  Buy
+                {{/link-to}}
+              </div>
+              <div class="tile is-child has-text-centered is-size-3">
+                ${{fuel.price}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  
+</section>

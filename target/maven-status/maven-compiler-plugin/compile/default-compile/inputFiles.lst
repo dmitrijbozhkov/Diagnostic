@@ -1,0 +1,16 @@
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Security/JwtAuthenticationFilter.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/DiagnosisApplication.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Security/JwtAuthenticationEntryPoint.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Exceptions/InputDataValidationException.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Security/DiagnosisUserPrincipal.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Security/DiagnosisUserDetailsService.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Models/Person.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Exceptions/EntityAlreadyExistsException.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Security/JwtTokenProvider.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Models/Enums/PersonAuthorities.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Services/Interfaces/IPersonService.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Services/Implementations/PersonService.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Security/SecurityConfig.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Exceptions/EntityNotFoundException.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Repositories/IPersonRepository.java
+/home/dima/IdeaProjects/Diagnosis/src/main/java/org/nure/Diagnosis/Models/Enums/Gender.java

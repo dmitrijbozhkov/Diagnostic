@@ -1,0 +1,36 @@
+#index-hero {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/900px-Flag_of_Uganda.svg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    background-clip: content-box;
+}
+
+.is-shady {
+    transition: all .2s ease-in-out;
+}
+
+.is-shady:hover {
+    box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
+}
+
+.card-image > .fa {
+    font-size: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.navbar-brand > .navbar-item {
+    font-family: Futura;
+}
+
+.buy-chevron > .fa {
+    font-size: 4rem;
+}
+
+.buy-content > .fa {
+    font-size: 8rem;
+}
+
+.buy-content > figure {
+    margin: auto;
+}

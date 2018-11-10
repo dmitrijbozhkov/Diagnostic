@@ -1,0 +1,120 @@
+<form>
+  <div class="level">
+    <div class="level-left"><h1 class="title">Buy fuel "{{model.fuelName}}" for</h1></div>
+    <div class="level-right"><span class="tag is-size-5 is-danger">${{model.price}}</span></div>
+  </div>
+  <div class="field">
+    <label class="label">Payment method</label>
+    <div class="control">
+      <div class="select">
+        <select>
+          <option selected>BitPay</option>
+          <option disabled>Credit card</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">
+      <div class="level">
+        <div class="level-left"><span class="is-size-5">Fuel to buy:</span></div>
+        <div class="level-right"><span class="tag is-size-5">{{representSelectedFuelAmount}}/{{model.fuelLeft}} Liters</span></div>
+      </div>
+    </label>
+    <div class="control">
+      <input
+        type="range"
+        class="slider is-fullwidth"
+        max={{model.fuelLeft}}
+        value={{representSelectedFuelAmount}}
+        oninput={{action "fuelMoved"}}
+        onchange={{action "fuelUpdate"}}
+      >
+    </div>
+    <div class="field has-addons">
+      <div class="control">
+        <a href="#" class="button is-medium" {{action "oneLessLiter"}}>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="control is-expanded">
+        <input
+          value={{selectedFuelAmount}}
+          onchange={{action "fuelUpdate"}}
+          oninput={{action "fuelMoved"}}
+          class="input is-medium"
+        >
+      </div>
+      <div class="control">
+        <a href="#" class="button is-medium" {{action "oneMoreLiter"}}>
+          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="level">
+      <div
+        class="level-item notification is-success is-marginless is-paddingless is-size-4"
+      >
+        ${{selctedFuelPrice}}
+      </div>
+      <div class="level-item">Will be exchanged for</div>
+      <div
+        class="level-item notification is-warning is-marginless is-paddingless is-size-4"
+      >
+        {{bitcoinPrice}}BTC
+      </div>
+    </div>
+    <a
+      href="#"
+      class="button is-fullwidth is-success is-large"
+      {{action "toggleBuyFuelModal"}}
+    >
+      Buy!
+    </a>
+  </div>      
+</form>
+<div class="modal {{if isBitcoinModalOpen "is-active" ""}}">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Buying fuel</p>
+      <button
+        class="delete"
+        aria-label="close"
+        {{action "toggleBuyFuelModal"}}
+      >
+      </button>
+    </header>
+    <section class="modal-card-body">
+      <div class="box is-marginless has-text-centered buy-content">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <hr>
+        <h2 class="subtitle">Open BitPay mobile application</h2>
+      </div>
+      <div class="has-text-centered container-fluid buy-chevron">
+        <i class="fa fa-chevron-down " aria-hidden="true"></i>
+      </div>
+      <div class="box is-marginless has-text-centered buy-content">
+        <figure class="image is-128x128">
+          <img
+            src="https://www.asti.com/wp-content/uploads/2017/08/AAEAAQAAAAAAAAWbAAAAJGFlM2NhMWM3LTNjNDQtNDFlMy04MDUyLTAxMzJjZDJhMjcwNw.png"
+            alt="QR code"
+          >
+        </figure>
+        <hr>
+        <h2 class="subtitle">Scan this QR code</h2>
+      </div>
+      <div class="has-text-centered container-fluid buy-chevron">
+        <i class="fa fa-chevron-down " aria-hidden="true"></i>
+      </div>
+      <div class="box is-marginless has-text-centered buy-content">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <hr>
+        <h2 class="subtitle">Accept the payment</h2>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success is-fullwidth">All done!</button>
+    </footer>
+  </div>
+</div>
