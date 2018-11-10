@@ -1,0 +1,98 @@
+:root {
+    --primary: #1565C0;
+    --primary-variant: #1E88E5;
+    --secondary: #EF6C00;
+    --secondary-variant: #FB8C00;
+    --background: white;
+    --surface: white;
+    --error:red;
+    
+    --on-primary: white;
+    --on-primary-variant: white;
+    --on-secondary: white;
+    --on-secondary-variant: white;
+    --on-background: #212121;
+    --on-surface: #424242;
+    --on-error: white;
+    
+}
+
+html{
+    background-color: (--background);
+}
+body{
+    margin: 0;
+}
+p{
+    color: var(--on-backround);
+    font-size: 1rem;
+}
+a{
+    color: var(--secondary-variant);
+}
+a:hover{
+    color: var(--secondary);
+}
+
+h1,h2,h3,h4,h5,h6,h7,h8,h9,h10{
+    color: var(--on-backround);
+}
+
+.input{
+    color: var(--on-surface);
+    background-color: var(--surface);
+    border-color: var(--primary-variant);
+}
+.input:hover, .input:active,.input:focus{
+    border-color: var(--secondary);
+    box-shadow: none;
+}
+
+.button{
+    color: var(--on-secondary);
+    background-color: var(--secondary-variant);
+}
+
+.button:hover{
+    color: var(--on-secondary)!important;
+    background-color: var(--secondary)!important;
+}
+
+.card-header{
+    background-color: var(--primary-variant);
+}
+.card-header-title{
+    color: var(--on-primary);
+    font-size: 1.5rem;
+}
+
+.dig-align-center{
+    align-items: center;
+}
+
+.dig-navbar-header{
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    box-shadow: grey 1px 1px 4px 1px;
+}
+
+.dig-navbar-header .title{
+    color: var(--on-primary);
+    font-style: oblique;
+}
+
+.dig-navbar-header .columns{
+    align-items: center;
+    margin-top: 0;
+}
+
+.dig-navbar-header a,.dig-navbar-header a:hover{
+    color: var(--on-primary);
+    font-size: 1.3rem;
+    margin: 0 1.6rem;
+}
+
+.dig-navbar-header {
+    
+}
