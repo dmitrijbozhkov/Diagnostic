@@ -1,10 +1,7 @@
 package org.nure.diagnosis.controllers;
 
 import org.nure.diagnosis.exceptions.InputDataValidationException;
-import org.nure.diagnosis.exchangemodels.usercontroller.AuthToken;
-import org.nure.diagnosis.exchangemodels.usercontroller.ChangePassword;
-import org.nure.diagnosis.exchangemodels.usercontroller.CreateUserCredentials;
-import org.nure.diagnosis.exchangemodels.usercontroller.UserCredentials;
+import org.nure.diagnosis.exchangemodels.usercontroller.*;
 import org.nure.diagnosis.models.enums.PersonAuthorities;
 import org.nure.diagnosis.security.JwtTokenProvider;
 import org.nure.diagnosis.services.interfaces.IPersonService;
@@ -40,7 +37,7 @@ public class UserController {
         }
     }
 
-    @RequestMapping(value = "/signin", method = { RequestMethod.POST })
+    @RequestMapping(value = "/register", method = { RequestMethod.POST })
     public ResponseEntity signin(@RequestBody CreateUserCredentials credentials) {
         Set<ConstraintViolation<Object>> validation = validator.validate(credentials);
         validateConstrains(validation);
@@ -73,5 +70,11 @@ public class UserController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         userService.changePassword(auth.getName(), changePassword.getPassword(), changePassword.getOldPassword());
         return ResponseEntity.ok().build();
+    }
+
+    @RequestMapping(value = "/email-taken", method = { RequestMethod.POST })
+    public ResponseEntity emailTaken(@RequestBody ValidateEmail email) {
+        return ResponseEntity
+                .ok(new EmailTaken(userService.isEmailTaken(email.getEmail())));
     }
 }

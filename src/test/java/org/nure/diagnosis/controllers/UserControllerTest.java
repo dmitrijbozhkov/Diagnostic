@@ -4,10 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.nure.diagnosis.exchangemodels.usercontroller.AuthToken;
-import org.nure.diagnosis.exchangemodels.usercontroller.ChangePassword;
-import org.nure.diagnosis.exchangemodels.usercontroller.CreateUserCredentials;
-import org.nure.diagnosis.exchangemodels.usercontroller.UserCredentials;
+import org.nure.diagnosis.exchangemodels.usercontroller.*;
 import org.nure.diagnosis.models.enums.Gender;
 import org.nure.diagnosis.models.enums.PersonAuthorities;
 import org.nure.diagnosis.security.JwtTokenProvider;
@@ -25,7 +22,7 @@ import org.springframework.test.web.servlet.MvcResult;
 import java.util.Arrays;
 import java.util.Date;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -61,7 +58,7 @@ public class UserControllerTest {
     @Test
     public void testSigninShouldReturnOk() throws Exception {
         CreateUserCredentials credentials = new CreateUserCredentials(name, surname, lastName, gender, birthday, email, password);
-        mvc.perform(post("/api/user/signin")
+        mvc.perform(post("/api/user/register")
                 .contentType(MediaType.APPLICATION_JSON).content(map.writeValueAsString(credentials)))
                 .andExpect(status().isOk());
     }
@@ -69,7 +66,7 @@ public class UserControllerTest {
     @Test
     public void testSigninShouldCreateUser() throws Exception {
         CreateUserCredentials credentials = new CreateUserCredentials(name, surname, lastName, gender, birthday, email, password);
-        mvc.perform(post("/api/user/signin")
+        mvc.perform(post("/api/user/register")
                 .contentType(MediaType.APPLICATION_JSON).content(map.writeValueAsString(credentials)));
         verify(userServiceMock).createUser(
                 Arrays.asList(PersonAuthorities.PATIENT),
@@ -112,5 +109,27 @@ public class UserControllerTest {
         mvc.perform(post("/api/user/change-password").contentType(MediaType.APPLICATION_JSON).content(map.writeValueAsString(changePassword)))
                 .andExpect(status().isOk());
         verify(userServiceMock).changePassword(email, nextPassword, password);
+    }
+
+    @Test
+    public void testEmailTakenShouldTakeUserEmailAndReturnTrueIfEmailExists() throws Exception {
+        ValidateEmail validateEmail = new ValidateEmail(email);
+        given(userServiceMock.isEmailTaken(email)).willReturn(true);
+        MvcResult result = mvc.perform(post("/api/user/email-taken").contentType(MediaType.APPLICATION_JSON).content(map.writeValueAsString(validateEmail)))
+                .andExpect(status().isOk())
+                .andReturn();
+        EmailTaken isTaken = map.readValue(result.getResponse().getContentAsString(), EmailTaken.class);
+        assertTrue(isTaken.isEmailTaken());
+    }
+
+    @Test
+    public void testEmailTakenShouldTakeUserEmailAndReturnFalseIfEmailDoesntExist() throws Exception {
+        ValidateEmail validateEmail = new ValidateEmail(email);
+        given(userServiceMock.isEmailTaken(email)).willReturn(false);
+        MvcResult result = mvc.perform(post("/api/user/email-taken").contentType(MediaType.APPLICATION_JSON).content(map.writeValueAsString(validateEmail)))
+                .andExpect(status().isOk())
+                .andReturn();
+        EmailTaken isTaken = map.readValue(result.getResponse().getContentAsString(), EmailTaken.class);
+        assertFalse(isTaken.isEmailTaken());
     }
 }

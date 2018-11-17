@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.nure.diagnosis.controllers.UserControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.092 s - in org.nure.diagnosis.controllers.UserControllerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.949 s - in org.nure.diagnosis.controllers.UserControllerTest

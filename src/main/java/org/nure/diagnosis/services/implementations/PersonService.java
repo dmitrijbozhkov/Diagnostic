@@ -39,20 +39,31 @@ public class PersonService implements IPersonService {
         this.encoder = encoder;
     }
 
-    @Override
-    public void createUser(List<PersonAuthorities> authorities, String name, String surname, String lastName, Gender gender, Date date, String email, String password) throws EntityAlreadyExistsException {
+    private Person getPersonByEmail(String email) throws EntityNotFoundException {
         Optional<Person> search = userRepository.findByEmail(email);
-        if (search.isPresent()) {
-            throw new EntityAlreadyExistsException(String.format("GasStationUser with name of %s already exists", email));
+        if (!search.isPresent()) {
+            throw new EntityNotFoundException(String.format("User with name of %s already exists", email));
         }
-        List<String> encodedAuthorities = authorities
-                .stream()
-                .map((a) -> {
-                    return a.getAuthority();
-                })
-                .collect(Collectors.toList());
-        encodedAuthorities.add("Person");
-        userRepository.save(new Person(encodedAuthorities, name, surname, lastName, gender, date, email, password));
+        return search.get();
+    }
+
+    @Override
+    @Transactional
+    public void createUser(List<PersonAuthorities> authorities, String name, String surname, String lastName, Gender gender, Date date, String email, String password) throws EntityAlreadyExistsException {
+        try {
+            getPersonByEmail(email);
+        } catch(EntityNotFoundException err) {
+            List<String> encodedAuthorities = authorities
+                    .stream()
+                    .map((a) -> {
+                        return a.getAuthority();
+                    })
+                    .collect(Collectors.toList());
+            encodedAuthorities.add("Person");
+            userRepository.save(new Person(encodedAuthorities, name, surname, lastName, gender, date, email, password));
+            return;
+        }
+        throw new EntityAlreadyExistsException(String.format("User with email %s already exists, perhaps you should login?", email));
     }
 
     @Override
@@ -65,15 +76,22 @@ public class PersonService implements IPersonService {
     @Override
     @Transactional
     public void changePassword(String email, String password, String oldPassword) throws EntityNotFoundException {
-        Optional<Person> search = userRepository.findByEmail(email);
-        if (!search.isPresent()) {
-            throw new EntityNotFoundException(String.format("User %s not found, can't change password", email));
-        }
-        Person user = search.get();
+        Person user = getPersonByEmail(email);
         if (!encoder.matches(oldPassword, user.getPassword())) {
             throw new InputDataValidationException("Old password isn't correct");
         }
         user.setPassword(encoder.encode(password));
+    }
+
+    @Override
+    public boolean isEmailTaken(String email) {
+        try {
+            getPersonByEmail(email);
+        }
+        catch (EntityNotFoundException ex) {
+            return false;
+        }
+        return true;
     }
 
 }

@@ -1,2 +1,2 @@
-/home/dima/IdeaProjects/Diagnosis/src/test/java/org/nure/Diagnosis/Controllers/UserControllerTest.java
-/home/dima/IdeaProjects/Diagnosis/src/test/java/org/nure/Diagnosis/Services/Implementations/PersonServiceTest.java
+/home/dima/IdeaProjects/Diagnosis/src/test/java/org/nure/diagnosis/services/implementations/PersonServiceTest.java
+/home/dima/IdeaProjects/Diagnosis/src/test/java/org/nure/diagnosis/controllers/UserControllerTest.java

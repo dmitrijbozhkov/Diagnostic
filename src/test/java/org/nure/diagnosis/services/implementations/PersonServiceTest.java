@@ -144,4 +144,19 @@ public class PersonServiceTest {
         personService.changePassword(correctEmail, changingPassword, correctPassword);
         verify(user).setPassword(argThat(settingPassword -> encoder.matches(changingPassword, settingPassword)));
     }
+
+    @Test
+    public void testIsEmailTakenSouldReturnTrueIfEmailExists() {
+        given(personRepository.findByEmail(correctEmail)).willReturn(Optional.of(new Person()));
+        boolean result = personService.isEmailTaken(correctEmail);
+        assertTrue(result);
+    }
+
+    @Test
+    public void testIsEmailTakenShouldReturnFalseIfEmailDoesntExist() {
+        String incorrectEmail = "stuff@gmail.com";
+        given(personRepository.findByEmail(incorrectEmail)).willReturn(Optional.empty());
+        boolean result = personService.isEmailTaken(correctEmail);
+        assertFalse(result);
+    }
 }

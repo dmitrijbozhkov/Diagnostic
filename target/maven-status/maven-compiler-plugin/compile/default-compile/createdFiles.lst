@@ -6,6 +6,8 @@ org/nure/diagnosis/exchangemodels/usercontroller/ChangePassword.class
 org/nure/diagnosis/exchangemodels/exceptioncontroller/ExceptionResponse.class
 org/nure/diagnosis/exchangemodels/usercontroller/CreateUserCredentials.class
 org/nure/diagnosis/repositories/IPersonRepository.class
+org/nure/diagnosis/exchangemodels/usercontroller/EmailTaken.class
+org/nure/diagnosis/controllers/MainController.class
 org/nure/diagnosis/security/JwtAuthenticationEntryPoint.class
 org/nure/diagnosis/exceptions/EntityNotFoundException.class
 org/nure/diagnosis/controllers/UserController.class
@@ -13,6 +15,7 @@ org/nure/diagnosis/models/Person.class
 org/nure/diagnosis/DiagnosisApplication.class
 org/nure/diagnosis/security/SecurityConfig.class
 org/nure/diagnosis/security/JwtTokenProvider.class
+org/nure/diagnosis/exchangemodels/usercontroller/ValidateEmail.class
 org/nure/diagnosis/controllers/ExceptionController.class
 org/nure/diagnosis/services/interfaces/IPersonService.class
 org/nure/diagnosis/security/DiagnosisUserDetailsService.class
