@@ -5,17 +5,41 @@
       <artifact name="Diagnosis:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IDiseaseService.java" line="15" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bf024fe9-2a4a-4936-9732-d61fd3bdbe1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/EmailTaken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/ValidateEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Disease.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/DiseaseHasSymptom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Symptom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Syndrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/IDiseaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/ISymptomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/ISyndromeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/common/CommonServiceMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/common/IdEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/DiseaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/SymptomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/SyndromeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IDiseaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/ISymptomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/ISyndromeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/models/CharacteristicToDisease.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/models/SymptomCharacteristic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/DiseaseServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/SymptomServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/SyndromeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IPersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IPersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/controllers/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/controllers/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/PersonServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nure/diagnosis/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nure/diagnosis/models/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/nure/diagnosis/services/implementations/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nure/diagnosis/services/implementations/PersonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.nure.diagnosis.controllers.UserControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.nure.diagnosis.controllers.UserControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.nure.diagnosis.services.implementations.PersonServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.nure.diagnosis.services.implementations.PersonServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.nure.diagnosis.controllers.UserControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.nure.diagnosis.controllers.UserControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.nure.diagnosis.services.implementations.PersonServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.nure.diagnosis.services.implementations.PersonServiceTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,16 +52,18 @@
     <session id="2106040000">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -45,7 +71,7 @@
           <entry key="MF" value="1" />
           <entry key="class" value="29" />
           <entry key="config" value="1" />
-          <entry key="java" value="69" />
+          <entry key="java" value="156" />
           <entry key="properties" value="5" />
           <entry key="xml" value="3" />
         </counts>
@@ -53,7 +79,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="29" />
-          <entry key="JAVA" value="69" />
+          <entry key="JAVA" value="156" />
           <entry key="Lombok config file" value="1" />
           <entry key="Manifest" value="1" />
           <entry key="Properties" value="5" />
@@ -62,16 +88,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="5" />
-          <entry key="java" value="6414" />
+          <entry key="dummy" value="15" />
+          <entry key="java" value="21958" />
           <entry key="properties" value="150" />
           <entry key="xml" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6414" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="JAVA" value="21958" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="Properties" value="150" />
           <entry key="XML" value="97" />
         </counts>
@@ -81,10 +107,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/controllers/UserControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/DiseaseServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+            <state relative-caret-position="468">
+              <caret line="193" column="62" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,19 +119,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/controllers/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/SymptomServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/PersonServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="151" column="27" lean-forward="true" selection-start-line="151" selection-start-column="27" selection-end-line="151" selection-end-column="27" />
+            <state relative-caret-position="184">
+              <caret line="226" column="23" lean-forward="true" selection-start-line="226" selection-start-column="23" selection-end-line="226" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,10 +131,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/PersonService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Disease.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="766">
-              <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+            <state relative-caret-position="78">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/DiseaseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="107" column="29" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,55 +156,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/EmailTaken.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/SyndromeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="289">
+              <caret line="96" column="108" lean-forward="true" selection-start-line="96" selection-start-column="108" selection-end-line="96" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IPersonService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/ValidateEmail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/CreateUserCredentials.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="124" selection-start-line="33" selection-start-column="124" selection-end-line="33" selection-end-column="124" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/exceptioncontroller/ExceptionResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -193,9 +181,20 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>signin</find>
+      <find>desease</find>
+      <find>Repository</find>
+      <find>disease</find>
+      <find>Symptom</find>
+      <find>Disease</find>
+      <find>symptom</find>
     </findStrings>
     <replaceStrings>
       <replace>register</replace>
+      <replace>Service</replace>
+      <replace>symptom</replace>
+      <replace>Syndrome</replace>
+      <replace>Symptom</replace>
+      <replace>disease</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -204,21 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lombok.config" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Models/Enums/Gender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Security/DiagnosisUserPrincipal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Security/JwtAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Security/DiagnosisUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Services/PersonService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Exceptions/EntityAlreadyExistsException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Exceptions/EntityNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Exceptions/InputDataValidationException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Services/Interfaces/IPersonService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Security/JwtTokenProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Security/JwtAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Security/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/nure/Diagnosis/Services/Implementations/PersonServiceTest.java" />
         <option value="$PROJECT_DIR$/frontend/public/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/ExchangeModels/CreateUserCredentials.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/ExchangeModels/UserCredentials.java" />
@@ -235,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/DiagnosisApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/Models/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/Models/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/DiagnosisApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/UsernameTaken.java" />
@@ -243,9 +226,34 @@
         <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IPersonService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/PersonServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/PersonService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/EmailTaken.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/controllers/UserControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Symptome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/IDeseaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/interfaces/IUpdatableEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IDeseaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/common/CommonMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/common/IdEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/common/CommonServiceMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/ISymptomRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/models/CharacteristicToDisease.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/models/SymptomCharacteristic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/ISymptomService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/ISyndromeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/ISyndromeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IDiseaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/SyndromeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/SymptomService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Symptom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Syndrome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Disease.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/DiseaseHasSymptom.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/SymptomServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/SyndromeServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/DiseaseService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/DiseaseServiceTest.java" />
       </list>
     </option>
   </component>
@@ -347,26 +355,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="diagnosis" type="462c0819:PsiDirectoryNode" />
-              <item name="exchangemodels" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptioncontroller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diagnosis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diagnosis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnosis" type="462c0819:PsiDirectoryNode" />
-              <item name="exchangemodels" type="462c0819:PsiDirectoryNode" />
-              <item name="usercontroller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Diagnosis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Diagnosis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="diagnosis" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -376,7 +364,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="diagnosis" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diagnosis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diagnosis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diagnosis" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diagnosis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diagnosis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diagnosis" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Diagnosis" type="b2602c69:ProjectViewProjectNode" />
@@ -397,6 +404,16 @@
               <item name="diagnosis" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Diagnosis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Diagnosis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diagnosis" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Diagnosis" type="b2602c69:ProjectViewProjectNode" />
@@ -445,7 +462,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542447601002" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542802611162" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -464,8 +481,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PersonServiceTest.testIsEmailTakenSouldReturnTrueIfEmailExists">
-    <configuration name="PersonServiceTest.testIsEmailTakenSouldReturnTrueIfEmailExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DiseaseServiceTest">
+    <configuration name="DiseaseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diagnosis" />
       <extension name="coverage">
         <pattern>
@@ -474,40 +491,70 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.nure.diagnosis.services.implementations" />
-      <option name="MAIN_CLASS_NAME" value="org.nure.diagnosis.services.implementations.PersonServiceTest" />
-      <option name="METHOD_NAME" value="testIsEmailTakenSouldReturnTrueIfEmailExists" />
+      <option name="MAIN_CLASS_NAME" value="org.nure.diagnosis.services.implementations.DiseaseServiceTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiseaseServiceTest.testUpdateDiseaseShouldUpdateDiseaseFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diagnosis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.nure.diagnosis.services.implementations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.nure.diagnosis.services.implementations" />
+      <option name="MAIN_CLASS_NAME" value="org.nure.diagnosis.services.implementations.DiseaseServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateDiseaseShouldUpdateDiseaseFields" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.testChangePasswordShouldCallChangePasswordWithSuppliedData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiseaseServiceTest.testUpdateSymptomShouldUpdateCharacteristicFieldOnExistingRelationship" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diagnosis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.nure.diagnosis.controllers.*" />
+          <option name="PATTERN" value="org.nure.diagnosis.services.implementations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.nure.diagnosis.controllers" />
-      <option name="MAIN_CLASS_NAME" value="org.nure.diagnosis.controllers.UserControllerTest" />
-      <option name="METHOD_NAME" value="testChangePasswordShouldCallChangePasswordWithSuppliedData" />
+      <option name="PACKAGE_NAME" value="org.nure.diagnosis.services.implementations" />
+      <option name="MAIN_CLASS_NAME" value="org.nure.diagnosis.services.implementations.DiseaseServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateSymptomShouldUpdateCharacteristicFieldOnExistingRelationship" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.testSigninShouldReturnOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SyndromeServiceTest.testUpdateSymptomShouldUpdateSyndromes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diagnosis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.nure.diagnosis.controllers.*" />
+          <option name="PATTERN" value="org.nure.diagnosis.services.implementations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.nure.diagnosis.controllers" />
-      <option name="MAIN_CLASS_NAME" value="org.nure.diagnosis.controllers.UserControllerTest" />
-      <option name="METHOD_NAME" value="testSigninShouldReturnOk" />
+      <option name="PACKAGE_NAME" value="org.nure.diagnosis.services.implementations" />
+      <option name="MAIN_CLASS_NAME" value="org.nure.diagnosis.services.implementations.SyndromeServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateSymptomShouldUpdateSyndromes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SyndromeServiceTest.testUpdateSyndromeShouldUpdateDiseaseRelationship" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diagnosis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.nure.diagnosis.services.implementations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.nure.diagnosis.services.implementations" />
+      <option name="MAIN_CLASS_NAME" value="org.nure.diagnosis.services.implementations.SyndromeServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateSyndromeShouldUpdateDiseaseRelationship" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -522,15 +569,19 @@
     </configuration>
     <list>
       <item itemvalue="JAR Application.Run application" />
-      <item itemvalue="JUnit.UserControllerTest.testChangePasswordShouldCallChangePasswordWithSuppliedData" />
-      <item itemvalue="JUnit.UserControllerTest.testSigninShouldReturnOk" />
-      <item itemvalue="JUnit.PersonServiceTest.testIsEmailTakenSouldReturnTrueIfEmailExists" />
+      <item itemvalue="JUnit.SyndromeServiceTest.testUpdateSymptomShouldUpdateSyndromes" />
+      <item itemvalue="JUnit.SyndromeServiceTest.testUpdateSyndromeShouldUpdateDiseaseRelationship" />
+      <item itemvalue="JUnit.DiseaseServiceTest.testUpdateDiseaseShouldUpdateDiseaseFields" />
+      <item itemvalue="JUnit.DiseaseServiceTest.testUpdateSymptomShouldUpdateCharacteristicFieldOnExistingRelationship" />
+      <item itemvalue="JUnit.DiseaseServiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PersonServiceTest.testIsEmailTakenSouldReturnTrueIfEmailExists" />
-        <item itemvalue="JUnit.UserControllerTest.testSigninShouldReturnOk" />
-        <item itemvalue="JUnit.UserControllerTest.testChangePasswordShouldCallChangePasswordWithSuppliedData" />
+        <item itemvalue="JUnit.DiseaseServiceTest" />
+        <item itemvalue="JUnit.DiseaseServiceTest.testUpdateSymptomShouldUpdateCharacteristicFieldOnExistingRelationship" />
+        <item itemvalue="JUnit.DiseaseServiceTest.testUpdateDiseaseShouldUpdateDiseaseFields" />
+        <item itemvalue="JUnit.SyndromeServiceTest.testUpdateSyndromeShouldUpdateDiseaseRelationship" />
+        <item itemvalue="JUnit.SyndromeServiceTest.testUpdateSymptomShouldUpdateSyndromes" />
       </list>
     </recent_temporary>
   </component>
@@ -548,30 +599,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserControllerTest_testChangePasswordShouldCallChangePasswordWithSuppliedData - 2018.11.10 at 16h 57m 50s.xml">
-      <configuration name="UserControllerTest.testChangePasswordShouldCallChangePasswordWithSuppliedData" configurationId="JUnit" />
+    <history-entry file="SymptomServiceTest_testUpdateSymptomShouldUpdateDiseaseRelationships - 2018.11.20 at 17h 36m 39s.xml">
+      <configuration name="SymptomServiceTest.testUpdateSymptomShouldUpdateDiseaseRelationships" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_testChangePasswordShouldCallChangePasswordWithSuppliedData - 2018.11.10 at 16h 58m 37s.xml">
-      <configuration name="UserControllerTest.testChangePasswordShouldCallChangePasswordWithSuppliedData" configurationId="JUnit" />
+    <history-entry file="SymptomServiceTest_testUpdateSymptomShouldUpdateCharacteristic - 2018.11.20 at 17h 43m 12s.xml">
+      <configuration name="SymptomServiceTest.testUpdateSymptomShouldUpdateCharacteristic" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_testSigninShouldReturnOk - 2018.11.10 at 16h 59m 17s.xml">
-      <configuration name="UserControllerTest.testSigninShouldReturnOk" configurationId="JUnit" />
+    <history-entry file="SyndromeServiceTest_testUpdateSyndromeShouldUpdateSyndromeFields - 2018.11.20 at 17h 52m 39s.xml">
+      <configuration name="SyndromeServiceTest.testUpdateSyndromeShouldUpdateSyndromeFields" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_testSigninShouldReturnOk - 2018.11.10 at 17h 02m 29s.xml">
-      <configuration name="UserControllerTest.testSigninShouldReturnOk" configurationId="JUnit" />
+    <history-entry file="SyndromeServiceTest_testUpdateSymptomShouldUpdateSyndromes - 2018.11.21 at 12h 41m 43s.xml">
+      <configuration name="SyndromeServiceTest.testUpdateSymptomShouldUpdateSyndromes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_testSigninShouldReturnOk - 2018.11.10 at 17h 02m 52s.xml">
-      <configuration name="UserControllerTest.testSigninShouldReturnOk" configurationId="JUnit" />
+    <history-entry file="SyndromeServiceTest_testUpdateSymptomShouldUpdateSyndromes - 2018.11.21 at 12h 42m 42s.xml">
+      <configuration name="SyndromeServiceTest.testUpdateSymptomShouldUpdateSyndromes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonServiceTest_testIsEmailTakenSouldReturnTrueIfEmailExists - 2018.11.17 at 10h 27m 42s.xml">
-      <configuration name="PersonServiceTest.testIsEmailTakenSouldReturnTrueIfEmailExists" configurationId="JUnit" />
+    <history-entry file="SyndromeServiceTest_testUpdateSymptomShouldUpdateSyndromes - 2018.11.21 at 12h 46m 00s.xml">
+      <configuration name="SyndromeServiceTest.testUpdateSymptomShouldUpdateSyndromes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SyndromeServiceTest_testUpdateSymptomShouldUpdateSyndromes - 2018.11.21 at 12h 46m 25s.xml">
+      <configuration name="SyndromeServiceTest.testUpdateSymptomShouldUpdateSyndromes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SyndromeServiceTest_testUpdateSyndromeShouldUpdateDiseaseRelationship - 2018.11.21 at 12h 50m 07s.xml">
+      <configuration name="SyndromeServiceTest.testUpdateSyndromeShouldUpdateDiseaseRelationship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SyndromeServiceTest_testUpdateSyndromeShouldUpdateDiseaseRelationship - 2018.11.21 at 12h 50m 24s.xml">
+      <configuration name="SyndromeServiceTest.testUpdateSyndromeShouldUpdateDiseaseRelationship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiseaseServiceTest_testUpdateDiseaseShouldUpdateDiseaseFields - 2018.11.21 at 13h 01m 07s.xml">
+      <configuration name="DiseaseServiceTest.testUpdateDiseaseShouldUpdateDiseaseFields" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986508" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -580,15 +643,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30801687" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.21202531" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30590716" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37658226" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32911393" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32911393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -602,144 +665,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exceptions/EntityAlreadyExistsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exceptions/EntityNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exceptions/InputDataValidationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/security/JwtAuthenticationEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/security/JwtAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/public/application.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/Diagnosis/ExchangeModels.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/security/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/security/JwtTokenProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="54" column="68" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/ChangePassword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/AuthToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.6.RELEASE/spring-aop-5.0.6.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="507" selection-start-line="507" selection-end-line="507" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="570" selection-start-line="570" selection-end-line="570" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="424" selection-start-line="424" selection-end-line="424" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="484" selection-start-line="484" selection-end-line="484" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.5.RELEASE/spring-security-web-5.0.5.RELEASE.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.5.RELEASE/spring-security-web-5.0.5.RELEASE.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.5.RELEASE/spring-security-web-5.0.5.RELEASE.jar!/org/springframework/security/web/header/HeaderWriterFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31.jar!/org/apache/catalina/authenticator/AuthenticatorBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31.jar!/org/apache/catalina/core/StandardHostValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31.jar!/org/apache/catalina/valves/ErrorReportValve.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -810,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/IPersonRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/enums/PersonAuthorities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -842,19 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/DiagnosisApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,9 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,19 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,9 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="124" selection-start-line="33" selection-start-column="124" selection-end-line="33" selection-end-column="124" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,33 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IPersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/EmailTaken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -953,30 +812,231 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/controllers/UserControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/exchangemodels/usercontroller/EmailTaken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/PersonService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="305">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IPersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="105" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/interfaces/IUpdatableEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/common/IdEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/IDiseaseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/ISymptomRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/IPersonRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/DiagnosisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/PersonServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="151" column="27" lean-forward="true" selection-start-line="151" selection-start-column="27" selection-end-line="151" selection-end-column="27" />
+        <state relative-caret-position="184">
+          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/common/CommonServiceMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/repositories/ISyndromeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/ISymptomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="192" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/ISyndromeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/interfaces/IDiseaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/controllers/UserControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Symptom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+        <state relative-caret-position="-87">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Syndrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/DiseaseHasSymptom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/SymptomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/SyndromeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="96" column="108" lean-forward="true" selection-start-line="96" selection-start-column="108" selection-end-line="96" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/SyndromeServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="108" column="53" lean-forward="true" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/models/SymptomCharacteristic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/models/CharacteristicToDisease.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/SymptomServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="226" column="23" lean-forward="true" selection-start-line="226" selection-start-column="23" selection-end-line="226" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/models/Disease.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nure/diagnosis/services/implementations/DiseaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="107" column="29" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/nure/diagnosis/services/implementations/DiseaseServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="193" column="62" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

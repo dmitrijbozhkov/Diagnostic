@@ -8,9 +8,8 @@ import java.util.Date;
 import java.util.List;
 
 @NodeEntity
+@NoArgsConstructor
 public class Person {
-
-    public Person() { }
 
     public Person(List<String> labels, String name, String surname, String lastName, Gender gender, Date birthday, String email, String password) {
         this.labels = labels;
@@ -25,92 +24,45 @@ public class Person {
 
     @Id
     @GeneratedValue
+    @Getter
     private Long id;
 
     @Labels
     @NonNull
+    @Getter
+    @Setter
     private List<String> labels;
 
     @Index
     @NonNull
+    @Getter
+    @Setter
     private String name;
     @Index
     @NonNull
+    @Getter
+    @Setter
     private String surname;
     @Index
     @NonNull
+    @Getter
+    @Setter
     private String lastName;
     @NonNull
+    @Getter
+    @Setter
     private Gender gender;
     @NonNull
+    @Getter
+    @Setter
     private Date birthday;
     @Index(unique = true)
     @NonNull
+    @Getter
+    @Setter
     private String email;
     @NonNull
+    @Getter
+    @Setter
     private String password;
-
-    public Long getId() {
-        return id;
-    }
-
-    public List<String> getLabels() {
-        return labels;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public Gender getGender() {
-        return gender;
-    }
-
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setGender(Gender gender) {
-        this.gender = gender;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

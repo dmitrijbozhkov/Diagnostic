@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.783" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.nure.diagnosis.services.implementations.SyndromeServiceTest" time="1.743" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -59,12 +59,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testIsEmailTakenSouldReturnTrueIfEmailExists" classname="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.069"/>
-  <testcase name="testChangePasswordShouldThrowEntityNotFoundExceptionIfUserNotFound" classname="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.003"/>
-  <testcase name="testIsEmailTakenShouldReturnFalseIfEmailDoesntExist" classname="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.004"/>
-  <testcase name="testAuthenticateShouldAuthenticateUserByCredentials" classname="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.027"/>
-  <testcase name="testChangePasswordShouldChangePasswordInEntity" classname="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.634"/>
-  <testcase name="testCreateUserShouldThrowEntityAlreadyExistsExceptionIfUserExists" classname="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.003"/>
-  <testcase name="testCreateUserShouldSaveNewUserIfEverythingCorrect" classname="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.004"/>
-  <testcase name="testChangePasswordShouldThrowInputDataValidationExceptionIfOldPasswordIsWrong" classname="org.nure.diagnosis.services.implementations.PersonServiceTest" time="0.003"/>
+  <testcase name="testGetSyndromeShouldThrowEntityNotFoundExceptionIfSyndromeNotFound" classname="org.nure.diagnosis.services.implementations.SyndromeServiceTest" time="0.17"/>
+  <testcase name="testCreateSyndromeShouldSetHasSymptomesRelationship" classname="org.nure.diagnosis.services.implementations.SyndromeServiceTest" time="0.007"/>
+  <testcase name="testGetSyndromeShouldReturnFoundSyndrome" classname="org.nure.diagnosis.services.implementations.SyndromeServiceTest" time="0.004"/>
+  <testcase name="testCreateSyndromeShouldSetSyndromeNameAndDescription" classname="org.nure.diagnosis.services.implementations.SyndromeServiceTest" time="0.005"/>
+  <testcase name="testDeleteSyndromeShouldCallDeleteOnReposiotryWithIt" classname="org.nure.diagnosis.services.implementations.SyndromeServiceTest" time="0.004"/>
+  <testcase name="testCreateSyndromeShouldSetInDiseasesRelationship" classname="org.nure.diagnosis.services.implementations.SyndromeServiceTest" time="0.005"/>
 </testsuite>

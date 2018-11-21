@@ -1,5 +1,6 @@
 package org.nure.diagnosis.services.implementations;
 
+import lombok.NoArgsConstructor;
 import org.nure.diagnosis.exceptions.EntityAlreadyExistsException;
 import org.nure.diagnosis.exceptions.EntityNotFoundException;
 import org.nure.diagnosis.exceptions.InputDataValidationException;
@@ -23,6 +24,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
+@NoArgsConstructor
 public class PersonService implements IPersonService {
     @Autowired
     private IPersonRepository userRepository;
@@ -30,8 +32,6 @@ public class PersonService implements IPersonService {
     private AuthenticationManager authManager;
     @Autowired
     private BCryptPasswordEncoder encoder;
-
-    public PersonService() { }
 
     public PersonService(IPersonRepository repo, AuthenticationManager manager, BCryptPasswordEncoder encoder) {
         this.userRepository = repo;
