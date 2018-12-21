@@ -40,7 +40,7 @@ public class UserController {
         }
     }
 
-    @RequestMapping(value = "/signin", method = { RequestMethod.POST })
+    @RequestMapping(value = "/register", method = { RequestMethod.POST })
     public ResponseEntity signin(@RequestBody CreateUserCredentials credentials) {
         Set<ConstraintViolation<Object>> validation = validator.validate(credentials);
         validateConstrains(validation);
