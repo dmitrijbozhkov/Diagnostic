@@ -21,7 +21,7 @@
         
         <div class="field is-grouped dig-align-center">
             <div class="control">
-                <button class="button is-medium " onclick={{auth}}>Sign in</button>
+                {{#link-to "login"}}<button class="button is-medium " onclick={{auth}}>Sign in</button>{{/link-to}}
             </div>
             <div class="control">
                 Or you can <a href="">{{#link-to "register"}} sign up {{/link-to}}</a>
