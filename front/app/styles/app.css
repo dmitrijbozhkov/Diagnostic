@@ -15,6 +15,12 @@
     --on-surface: #424242;
     --on-error: white;
     
+    /*for z-index*/
+    --low:0;
+    --middle:1;
+    --high:2;
+    --max:9999999999;
+    
 }
 
 html{
@@ -38,12 +44,15 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9,h10{
     color: var(--on-backround);
 }
 
-.input{
+.input, .select select{
     color: var(--on-surface);
     background-color: var(--surface);
     border-color: var(--primary-variant);
 }
-.input:hover, .input:active,.input:focus{
+.margin-left{
+    margin-left: .5rem;
+}
+.input:hover, .input:active,.input:focus, .select select:hover, .select select:active, .select select:hover{
     border-color: var(--secondary);
     box-shadow: none;
 }
@@ -53,9 +62,10 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9,h10{
     background-color: var(--secondary-variant);
 }
 
-.button:hover{
+.button:hover, .button:focus{
     color: var(--on-secondary)!important;
     background-color: var(--secondary)!important;
+    box-shadow: none;
 }
 
 .card-header{
@@ -75,11 +85,18 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9,h10{
     background-color: var(--primary);
     color: var(--on-primary);
     box-shadow: grey 1px 1px 4px 1px;
+    position: fixed;
+    height: auto;
+    z-index: var(--high);
+    max-height: 4rem;
+    height: 4rem;
+        top: 0;
 }
 
 .dig-navbar-header .title{
     color: var(--on-primary);
     font-style: oblique;
+    font-size: 1.9rem
 }
 
 .dig-navbar-header .columns{
@@ -90,9 +107,9 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9,h10{
 .dig-navbar-header a,.dig-navbar-header a:hover{
     color: var(--on-primary);
     font-size: 1.3rem;
-    margin: 0 1.6rem;
+    margin: 0 1.1rem;
 }
 
-.dig-navbar-header {
-    
+.dig-main-section{
+    margin-top: 4rem;
 }

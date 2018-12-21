@@ -6,54 +6,67 @@
     </header>
     <div class="card-content">
         <div class="field">
-            <label class="label">Username</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Username">
-            </div>
-        </div>
-        <div class="field">
             <label class="label">Name</label>
             <div class="control">
-                <input class="input" type="text" placeholder="Name">
+                <input class="input" value={{name}} type="text" placeholder="Name">
             </div>
         </div>
         <div class="field">
             <label class="label">Surname</label>
             <div class="control">
-                <input class="input" type="text" placeholder="Surname">
+                <input class="input" value={{surName}} type="text" placeholder="Surname">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Lastname</label>
+            <div class="control">
+                <input class="input" value={{lastName}} type="text" placeholder="Lastname">
             </div>
         </div>
         
-        <div class="field">
-            <label class="label">Gender</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="">
+        <div class="field is-grouped">
+           <div>
+                <div class="field">
+                      <label class="label">Gender</label>
+                      <div class="control">
+                            <div class="select">
+                                  <select value={{gender}}>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                  </select>
+                            </div>
+                      </div>
+                </div>
             </div>
+            
+           <div class="margin-left">
+               <label class="label">Date</label>
+                <div class="control">
+                    <input class="input" value={{date}} type="date" placeholder="">
+                </div>
+           </div>
         </div>
         
         <div class="field">
-            <label class="label">Date</label>
-            <div class="control">
-                <input class="input" type="date" placeholder="">
-            </div>
+            
         </div>
 
        <div class="field">
             <label class="label">E-mail </label>
             <div class="control">
-                <input class="input" type="email" placeholder="E-mail adress">
+                <input class="input" value={{email}} onchange={{emailChecker}} type="email" placeholder="E-mail adress">
             </div>
         </div>
         <div class="field">
             <label class="label">Password</label>
             <div class="control">
-                <input class="input" type="password" placeholder="Password">
+                <input class="input" value={{password}} type="password" placeholder="Password">
             </div>
         </div>
         <div class="field">
             <label class="label">Password confirmation</label>
             <div class="control">
-                <input class="input" type="password" placeholder="Password confirmation">
+                <input class="input" value={{confPassword}} onclick={{passChecker}} type="password" placeholder="Password confirmation">
             </div>
         </div>
         
